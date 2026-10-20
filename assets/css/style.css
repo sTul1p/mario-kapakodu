@@ -1,0 +1,48 @@
+/* Hero */
+.hero {
+  min-height: 500px;
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: center;
+}
+.hero-text {
+  max-width: 560px;
+}
+@media (max-width: 767.98px) {
+  .hero {
+    background-position: 75% center;
+  }
+  .hero-text {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+}
+
+/* Buttons */
+.btn-outline-success {
+  color: #198754 !important;
+}
+.btn-outline-success:hover {
+  color: #000 !important;
+}
+
+/* Cards */
+.card-img-top {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Mission divider (only on large screens) */
+@media (min-width: 992px) {
+  .border-start-lg {
+    border-left: 1px solid var(--bs-border-color);
+  }
+}
+
+/* Admin sidebar */
+@media (min-width: 992px) {
+  .admin-sidebar {
+    min-height: calc(100vh - 72px);
+  }
+}
